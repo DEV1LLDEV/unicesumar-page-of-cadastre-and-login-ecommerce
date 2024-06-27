@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
+    
     <title>Cadastro</title>
 </head>
 <body>
@@ -17,33 +18,40 @@
                 <input
                     type="text"
                     id="name"
-                    placeholder="Digite seu nome completo";
-                />
+                    placeholder="Digite seu nome completo...";/>
+
                 <label for="cep">Cep</label>
                 <input
                     type="text"
                     id="cep"
-                    placeholder="Digite seu cep";
-                    />
+                    placeholder="Digite seu cep...";/>  
                     <a href="https://buscacepinter.correios.com.br/app/localidade_logradouro/index.php">Não lembro meu CEP</a>
-
-                <label for="username">Email</label>
+<br>
+                <label for="email">Email</label>
                 <input
                     type="text"
                     id="email"
-                    placeholder="Digite seu email";
-                />
-                <label for="username">Senha</label>
+                    placeholder="Digite seu email..."; />
+
+                <label for="password">Senha</label>
                 <input
                     type="text"
                     id="password"
-                    placeholder="Digite uma senha de 6 digitos";
-                />
+                    placeholder="Digite sua senha...";/>
+                    <span>Aqui vai aparecer a mensagem de erro</span>
 
-            </div>
+                    <label for="password-confirmation">Confirmação de senha</label>
+                <input
+                    type="text"
+                    id="password-confirmation"
+                    placeholder="Digite uma senha de 6 digitos";/>
+                    <span>Aqui vai aparecer a mensagem de erro</span>
 
+            <button type="submit">Cadastrar</button>
         </form>
-    
+        
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
