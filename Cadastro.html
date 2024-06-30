@@ -17,41 +17,56 @@
                 <label for="username">Nome Completo</label>
                 <input
                     type="text"
-                    id="name"
+                    id="username"
                     placeholder="Digite seu nome completo...";/>
+                <span class="span-requerid">Nome deve conter no mínimo 3 caracteres</span>
+            </div>
 
+            <div class="form-content">
                 <label for="cep">Cep</label>
-                <input
-                    type="text"
+                <input 
+                    type="number"
                     id="cep"
                     placeholder="Digite seu cep...";/>  
                     <a href="https://buscacepinter.correios.com.br/app/localidade_logradouro/index.php">Não lembro meu CEP</a>
+                <span class="spam-requerid">O Cep deve ter 8 algorismos</span>
+            </div>
+
 <br>
+
+            <div class="form-content">
                 <label for="email">Email</label>
-                <input
-                    type="text"
+                <input 
+                    type="email"
                     id="email"
                     placeholder="Digite seu email..."; />
+                <span class="spam-requerid">O email deve conter o @</span>
+            </div>
 
+            <div class="form-content">
                 <label for="password">Senha</label>
-                <input
-                    type="text"
+                <input 
+                    type="password"
                     id="password"
                     placeholder="Digite sua senha...";/>
-                    <span>Aqui vai aparecer a mensagem de erro</span>
+                    <span class="spam-requerid">A senha deve ter no minimo 6 caracteres</span>
+            </div>
 
-                    <label for="password-confirmation">Confirmação de senha</label>
-                <input
-                    type="text"
+            <div class="form-content">
+                    <label for="password-confirmation">Confirmação de Senha</label>
+                    <input 
+                    type="password"
                     id="password-confirmation"
                     placeholder="Digite uma senha de 6 digitos";/>
-                    <span>Aqui vai aparecer a mensagem de erro</span>
+                    <span class="spam-requerid">As senhas não coincidem</span>
+            </div>
 
             <button type="submit">Cadastrar</button>
+
         </form>
         
     </div>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
